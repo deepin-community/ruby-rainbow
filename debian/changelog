@@ -1,0 +1,77 @@
+ruby-rainbow (3.0.0-3) unstable; urgency=medium
+
+  * Team upload.
+  * d/compat: Remove obsolete file.
+  * d/control: Add Rules-Requires-Root field.
+    (Build-Depends): Use debhelper-compat version 12 and depend on ruby-rspec
+    to fix the FTBFS (closes: #952087). Add ruby-coveralls required by specs.
+    (Standards-Version): Bump to 4.5.0.
+    (Depends): Use ${ruby:Depends} and remove interpreter.
+  * d/copyright: Add myself.
+    (Format): Fix insecure-copyright-format-uri.
+  * d/rules: Add override to install upstream Changelog.md.
+  * d/upstream/metadata: Add metadata.
+
+ -- Daniel Leidert <dleidert@debian.org>  Mon, 24 Feb 2020 00:50:18 +0100
+
+ruby-rainbow (3.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Reupload to unstable
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 23 Nov 2018 10:02:33 +0530
+
+ruby-rainbow (3.0.0-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream version 3.0.0
+  * Bump debhelper compatibility level to 11
+  * Use salsa.debian.org in Vcs-* fields
+  * Move debian/watch to gemwatch.debian.net
+  * Drop patches (not required anymore)
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 20 Nov 2018 16:29:09 +0530
+
+ruby-rainbow (2.2.2-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release.
+  * Bump Standards-Version to 4.1.0
+  * New patch 01_remove_ext_dir.patch
+
+ -- Abhijith PA <abhijith@openmailbox.org>  Tue, 29 Aug 2017 23:03:54 +0530
+
+ruby-rainbow (2.1.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Imported Upstream version 2.1.0
+  * Bump debhelper compatibility level to 9
+  * Remove version in the gem2deb build-dependency
+  * Use https:// in Vcs-* fields
+  * Bump Standards-Version to 3.9.8 (no changes needed)
+  * Run wrap-and-sort on packaging files
+  * Set Testsuite field to autopkgtest-pkg-ruby
+
+ -- Cédric Boutillier <boutil@debian.org>  Sat, 11 Jun 2016 23:42:37 +0200
+
+ruby-rainbow (2.0.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Nitesh A Jain <niteshjain92@gmail.com>  Wed, 05 Feb 2014 20:47:17 +0530
+
+ruby-rainbow (1.99.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Moved from d/ruby-tests.rb to d/ruby-tests.rake as upstream moved to spec/
+  * Added ruby-rspec-core to build depends to fix failing tests
+  * Bump gem2deb dependency to 0.6.1~
+  * Bump standards version to 3.9.5
+
+ -- Nitesh A Jain <niteshjain92@gmail.com>  Fri, 03 Jan 2014 15:32:17 +0530
+
+ruby-rainbow (1.1.4-1) unstable; urgency=low
+
+  * Initial release (Closes: #708532)
+
+ -- Nitesh A Jain <niteshjain92@gmail.com>  Thu, 16 May 2013 17:16:31 +0530
